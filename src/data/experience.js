@@ -52,11 +52,11 @@ export const journey = [
   {
     id: 'today',
     period: { ar: 'اليوم', en: 'Today' },
-    title: { ar: 'شريك مؤسس في Sanabel Apps', en: 'Co-founder at Sanabel Apps' },
-    subtitle: { ar: 'برمجيات وتطبيقات', en: 'Software & apps' },
+    title: { ar: 'بتعلّم في Sanabel Apps', en: 'Learning at Sanabel Apps' },
+    subtitle: { ar: 'تعلّم وتطبيق عملي', en: 'Learning & hands-on practice' },
     desc: {
-      ar: 'شريك مؤسس في Sanabel Apps، بساهم في تحويل الأفكار لمنتجات وبرمجيات متقنة. Sanabel Apps كانت أكتر من مكان أتعلم فيه برمجة — شكّلت طريقة تفكيري، وعلّمتني الصبر والانضباط والمسؤولية، وإني أحوّل الأفكار لمشاريع حقيقية.',
-      en: 'Co-founder at Sanabel Apps, helping turn ideas into polished products and software. It was more than a place to learn programming — it shaped how I think and taught me patience, discipline, responsibility, and how to turn ideas into real projects.',
+      ar: 'بتعلّم وأطبّق في Sanabel Apps، وبقيت أفهم إزاي الفكرة بتتحول لمنتج حقيقي. المكان علّمني الصبر والانضباط والمسؤولية، وإني أحوّل الأفكار لمشاريع حقيقية.',
+      en: "I'm learning and building at Sanabel Apps, and starting to understand how an idea becomes a real product. It taught me patience, discipline, responsibility, and how to turn ideas into real projects.",
     },
     tags: ['Sanabel Apps', 'Product', 'UI/UX', 'Development'],
   },

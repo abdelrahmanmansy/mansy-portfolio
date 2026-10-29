@@ -20,7 +20,7 @@ export const siteConfig = {
   // الشغل الحالي
   company: {
     name: { ar: 'Sanabel Apps', en: 'Sanabel Apps' },
-    role: { ar: 'شريك مؤسس', en: 'Co-founder' },
+    role: { ar: 'بتعلّم البرمجة', en: 'Learning to build' },
     url: 'https://sanabelapps.com',
   },
   // وصف الموقع لمحركات البحث ومنصات التواصل
