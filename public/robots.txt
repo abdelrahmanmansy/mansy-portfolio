@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdelrahmanmansy.github.io/mansy-portfolio/sitemap.xml

@@ -1,0 +1,156 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Instrument Sans', 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces', 'Noto Naskh Arabic', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-paper: #f4f0e7;
+  --color-paper-deep: #ebe4d6;
+  --color-ink: #16130f;
+  --color-ink-soft: #5d5549;
+  --color-line: #d6cec0;
+  --color-accent: #bf4426;
+  --color-accent-soft: #f2ddd4;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fine paper grain over the whole page — subtle, not a texture pack */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+[dir='rtl'] body {
+  font-family: 'IBM Plex Sans Arabic', 'Instrument Sans', system-ui, sans-serif;
+}
+
+[dir='rtl'] .font-display {
+  font-family: 'Noto Naskh Arabic', 'Fraunces', Georgia, serif;
+  letter-spacing: 0;
+  line-height: 1.38;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+::-webkit-scrollbar-thumb {
+  background: #c3b9a8;
+  border: 3px solid var(--color-paper);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a99d8a;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Editorial helpers */
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+/* Arabic doesn't take letter-spacing or uppercase well */
+[dir='rtl'] .mono-label {
+  font-family: 'IBM Plex Sans Arabic', var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.underline-grow {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.underline-grow:hover {
+  background-size: 100% 1px;
+}
+[dir='rtl'] .underline-grow {
+  background-position: 100% 100%;
+}
+
+/* Scroll reveal — kept gentle */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-fade-in {
+    animation: none !important;
+  }
+}
