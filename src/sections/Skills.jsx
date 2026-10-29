@@ -46,7 +46,7 @@ const Skills = () => {
       <Reveal delay={100}>
         <p className="mt-9 max-w-2xl border-t border-line pt-4 text-xs leading-relaxed text-ink-soft">
           {t(
-            'معظم المهارات دي مستخدمة في شغل منشور زي فانيليانو ومانسي تورز، وبكمّل تعلّم — آخرها Python.',
+            'معظم المهارات دي مستخدمة في شغل منشور زي Vanilliano وMansy Tours، وبكمّل تعلّم — آخرها Python.',
             'Most of these are used in shipped work like Vanilliano and Mansy Tours — and I keep learning, most recently Python.',
           )}
         </p>

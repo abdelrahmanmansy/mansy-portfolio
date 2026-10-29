@@ -3,13 +3,14 @@
 // ============================================================
 
 export const siteConfig = {
+  // الأسماء (شخص/شركة/مشاريع) بتفضل إنجليزي في النسختين زي ما هي
   name: {
-    ar: 'عبدالرحمن منسي',
+    ar: 'Abdelrahman Mansy',
     en: 'Abdelrahman Mansy',
   },
   // الاسم الأول — بيتستخدم في بعض العناوين القصيرة
   firstName: {
-    ar: 'عبدالرحمن',
+    ar: 'Abdelrahman',
     en: 'Abdelrahman',
   },
   title: {
@@ -18,13 +19,13 @@ export const siteConfig = {
   },
   // الشغل الحالي
   company: {
-    name: { ar: 'سنابل للتطبيقات', en: 'Sanabel Apps' },
+    name: { ar: 'Sanabel Apps', en: 'Sanabel Apps' },
     role: { ar: 'شريك مؤسس', en: 'Co-founder' },
     url: 'https://sanabelapps.com',
   },
   // وصف الموقع لمحركات البحث ومنصات التواصل
   seoDescription: {
-    ar: 'بورتفوليو عبدالرحمن منسي — مصمم ومطور مواقع من مصر. تصميم وتطوير مواقع ومتاجر إلكترونية عصرية، سريعة، ومتجاوبة مع دعم العربية والإنجليزية.',
+    ar: 'بورتفوليو Abdelrahman Mansy — مصمم ومطور مواقع من مصر. تصميم وتطوير مواقع ومتاجر إلكترونية عصرية، سريعة، ومتجاوبة مع دعم العربية والإنجليزية.',
     en: 'Abdelrahman Mansy — website designer and developer from Egypt. Modern, fast, responsive websites and e-commerce stores with Arabic and English support.',
   },
   // جملة قصيرة تحت الاسم
@@ -79,7 +80,7 @@ export const navLinks = [
 
 export const getWhatsAppLink = (
   lang = 'ar',
-  text = lang === 'ar' ? 'مرحباً عبدالرحمن، شفت البورتفوليو وحابب أتكلم معاك' : 'Hi Abdelrahman, I saw your portfolio and would like to talk',
+  text = lang === 'ar' ? 'مرحباً Abdelrahman، شفت البورتفوليو وحابب أتكلم معاك' : 'Hi Abdelrahman, I saw your portfolio and would like to talk',
 ) => {
   const phone = siteConfig.whatsapp.replace(/[^0-9]/g, '')
   return `https://wa.me/${phone}?text=${encodeURIComponent(text)}`

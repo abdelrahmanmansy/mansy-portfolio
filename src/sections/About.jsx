@@ -44,10 +44,10 @@ const About = () => {
           <div className="space-y-5 text-base leading-relaxed text-ink-soft sm:text-[17px]">
             <p>
               <span className="font-display text-lg text-ink sm:text-xl">
-                {t('أنا عبدالرحمن منسي،', "I'm Abdelrahman Mansy,")}
+                {t('أنا Abdelrahman Mansy،', "I'm Abdelrahman Mansy,")}
               </span>{' '}
               {t(
-                'مصمم ومطور مواقع من مصر، وشريك مؤسس في سنابل للتطبيقات (Sanabel Apps). بشتغل على تحويل الأفكار لمواقع حقيقية — من التصميم الأولي لحد آخر سطر كود — بتركيز على البساطة، السرعة، والتفاصيل اللي بتفرق.',
+                'مصمم ومطور مواقع من مصر، وشريك مؤسس في Sanabel Apps. بشتغل على تحويل الأفكار لمواقع حقيقية — من التصميم الأولي لحد آخر سطر كود — بتركيز على البساطة، السرعة، والتفاصيل اللي بتفرق.',
                 'a website designer and developer from Egypt and co-founder at Sanabel Apps. I turn ideas into real websites — from the first design to the last line of code — focusing on simplicity, speed, and the details that matter.',
               )}
             </p>

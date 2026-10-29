@@ -30,7 +30,7 @@ export const journey = [
   {
     id: 'vanilliano',
     period: { ar: 'مشروع حقيقي', en: 'Real project' },
-    title: { ar: 'فانيليانو', en: 'Vanilliano' },
+    title: { ar: 'Vanilliano', en: 'Vanilliano' },
     subtitle: { ar: 'متجر إلكتروني', en: 'E-commerce store' },
     desc: {
       ar: 'طوّرت متجر إلكتروني كامل لخامات الحلويات ومستلزمات الحفلات والتغليف، مع ربط Supabase لإدارة المحتوى.',
@@ -41,7 +41,7 @@ export const journey = [
   {
     id: 'tours',
     period: { ar: 'مشروع سياحي', en: 'Travel project' },
-    title: { ar: 'مانسي تورز', en: 'Mansy Tours' },
+    title: { ar: 'Mansy Tours', en: 'Mansy Tours' },
     subtitle: { ar: 'رحلات وسياحة', en: 'Tours & travel' },
     desc: {
       ar: 'بنيت موقع رحلات لعرض الوجهات والجولات بتجربة تصفح وحجز نظيفة، باستخدام Next.js وTypeScript.',
@@ -52,10 +52,10 @@ export const journey = [
   {
     id: 'today',
     period: { ar: 'اليوم', en: 'Today' },
-    title: { ar: 'شريك مؤسس في سنابل للتطبيقات', en: 'Co-founder at Sanabel Apps' },
+    title: { ar: 'شريك مؤسس في Sanabel Apps', en: 'Co-founder at Sanabel Apps' },
     subtitle: { ar: 'برمجيات وتطبيقات', en: 'Software & apps' },
     desc: {
-      ar: 'شريك مؤسس في سنابل للتطبيقات، بساهم في تحويل الأفكار لمنتجات وبرمجيات متقنة. سنابل كانت أكتر من مكان أتعلم فيه برمجة — شكّلت طريقة تفكيري، وعلّمتني الصبر والانضباط والمسؤولية، وإني أحوّل الأفكار لمشاريع حقيقية.',
+      ar: 'شريك مؤسس في Sanabel Apps، بساهم في تحويل الأفكار لمنتجات وبرمجيات متقنة. Sanabel Apps كانت أكتر من مكان أتعلم فيه برمجة — شكّلت طريقة تفكيري، وعلّمتني الصبر والانضباط والمسؤولية، وإني أحوّل الأفكار لمشاريع حقيقية.',
       en: 'Co-founder at Sanabel Apps, helping turn ideas into polished products and software. It was more than a place to learn programming — it shaped how I think and taught me patience, discipline, responsibility, and how to turn ideas into real projects.',
     },
     tags: ['Sanabel Apps', 'Product', 'UI/UX', 'Development'],

@@ -6,7 +6,7 @@
 export const projects = [
   {
     id: 'vanilliano',
-    nameAr: 'فانيليانو',
+    nameAr: 'Vanilliano',
     nameEn: 'Vanilliano',
     typeAr: 'متجر إلكتروني',
     typeEn: 'E-commerce',
@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     id: 'mansy-tours',
-    nameAr: 'مانسي تورز',
+    nameAr: 'Mansy Tours',
     nameEn: 'Mansy Tours',
     typeAr: 'رحلات وسياحة',
     typeEn: 'Travel & Tours',
